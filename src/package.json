@@ -1,0 +1,21 @@
+{
+  "name": "react-jsdiff-diff-match-patch-react-diff-viewer",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://codesandbox.io/s/zzloxr09mp",
+  "main": "index.js",
+  "dependencies": {
+    "diff": "4.0.2",
+    "diff-match-patch": "1.0.5",
+    "is-url": "1.2.4",
+    "jsdiff": "1.1.1",
+    "prop-types": "15.7.2",
+    "react": "16.3.2",
+    "react-diff-viewer": "3.1.1",
+    "react-dom": "16.3.2",
+    "string-cosine-similarity": "2.0.1",
+    "string-similarity": "4.0.4",
+    "words-count": "2.0.2"
+  }
+}
