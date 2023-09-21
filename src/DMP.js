@@ -31,8 +31,8 @@ const DMP = ({ string1 = "", string2 = "", cleanUp, editCost = 4 }) => {
       const linebreaks = value.match(/(\S)*(\r\n|\r|\n)/g);
       // console.log(`contains ${linebreaks.length} new line`, linebreaks);
       if (linebreaks) {
-        if (key === -1) value = `\u00b6`.repeat(linebreaks.length);
-        if (key === 1) value = `\u00b6\n`.repeat(linebreaks.length);
+        if (key === -1) value = `\u21B5`.repeat(linebreaks.length);
+        if (key === 1) value = `\u21B5\n`.repeat(linebreaks.length);
       }
     }
     let nodeStyles;
@@ -41,7 +41,7 @@ const DMP = ({ string1 = "", string2 = "", cleanUp, editCost = 4 }) => {
     return <span style={nodeStyles}>{value}</span>;
   });
 
-  return <span style={{ whiteSpace: "pre" }}>{mappedNodes}</span>;
+  return <span style={{ whiteSpace: "pre-wrap" }}>{mappedNodes}</span>;
 };
 
 DMP.propTypes = {
