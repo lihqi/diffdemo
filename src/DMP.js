@@ -29,7 +29,7 @@ const DMP = ({ string1 = "", string2 = "", cleanUp, editCost = 4 }) => {
     let value = group[1];
     if ((key === -1 || key === 1) && !/\S/.test(value)) {
       const linebreaks = value.match(/(\S)*(\r\n|\r|\n)/g);
-      // 用回车代替奇怪的换行符号
+      // 用回车↵代替奇怪的换行符号,如果换行符被删掉了就不换行了
       if (linebreaks) {
         if (key === -1) value = `\u21B5`.repeat(linebreaks.length);
         if (key === 1) value = `\u21B5\n`.repeat(linebreaks.length);
